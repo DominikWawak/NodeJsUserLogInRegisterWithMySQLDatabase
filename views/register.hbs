@@ -1,0 +1,26 @@
+<h1>register</h1>
+
+<form action="/auth/register" method="POST">
+    <div>
+        <label for="name"> Name</label>
+        <input type="text" id ="name" name = "name" required>
+    </div>
+    <div>
+        <label for="email"> Email</label>
+        <input type="email" id ="email" name = "email" required>
+    </div>
+    <div>
+        <label for="password"> Password</label>
+        <input type="password" id ="password" name = "password" required>
+    </div>
+    <div>
+        <label for="Wallet"> Wallet/Account</label>
+        <input type="text" id ="wallet" name = "account" required>
+    </div>
+    <button type = "submit">register</button>
+</form>
+
+{{#if message}}
+    <h3>{{message}}</h3>
+{{/if}}
+<a href="/login">login</a>
